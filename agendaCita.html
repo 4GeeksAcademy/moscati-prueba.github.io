@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <!--META TAGS-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="Telemedicina hospital Moscati, agenda tu cita">
+    <meta name="keywords" content="Telemedicina Moscati, Hospital Moscati, Hospitales en Queretaro">
+    <meta name="author" content="TI Moscati">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#002554">
+    <meta name="robots" content="index"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Telemedicina">
+    <meta property="og:title" content="Telemedicina | Hospital Moscati">
+    <meta property="og:url" content="https://moscati.com.mx/agendaCita.html">
+    <!--END META TAGS-->
+
+    <!--Style sheets and imports-->
+    <script rel="preload" src="https://code.getmdl.io/1.1.3/material.min.js" crossorigin="anonymous"></script>
+    <script rel="preload" src="https://kit.fontawesome.com/ebc4682b90.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stepper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--END Style sheets and imports-->
+
+    <!--Site main config-->
+    <title>Hospital Moscati</title>
+    <link rel="icon" href="img/Favicon-48.png" media="(prefers-color-scheme:no-preference)" type="image/x-icon">
+    <link rel="icon" href="img/Favicon-48b.png"  media="(prefers-color-scheme:dark)" type="image/x-icon">
+    <link rel="icon" href="img/Favicon-48.png" media="(prefers-color-scheme:light)" type="image/x-icon">
+    <!--END Site main config-->
+</head>
+<body>
+    <!--HEADER-->
+    <header class="container-fluid sticky-top">
+        <div class="row nav-top">
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                <span class="hamburger material-icons" id="ham">menu</span>
+            </div>
+            <div class="col-10 d-flex align-content-center justify-content-center">
+                <a href="telemedicina.html" class="banner-img">
+                    <img src="img/350x75-01.png" alt="Logo Hospital Moscati">
+                </a>
+            </div>
+            <div class="col-1 d-flex justify-content-center align-items-center">
+                    <span class="material-icons">
+                        <a href="tel:4423885420" class="phone">phone</a>
+                    </span>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+    <!--CONTAINER CONTACT-->
+    <section class="container-fluid container-contact">
+        <div class="row">
+            <div class="col-4 col-md-4 d-flex justify-content-start align-items-center contact-text">
+                <span class="maps material-icons">location_on</span>
+                <a href="https://g.page/Moscatiqro?share">Boulevard Av.de las Ciencias 2058 Querétaro</a>
+            </div>
+            <div class="col-3 col-md-3 d-flex justify-content-start align-items-center contact-text">
+                <span class="phone-2 material-icons">phone</span>
+                <a href="tel:4423885420">Informes: 442 189 3660</a>
+            </div>
+            <div class="col-3 col-md-3 d-flex justify-content-start align-items-center contact-text">
+                <span class="phone-2 material-icons">phone</span>
+                <a href="tel:4421893663">Urgencias: 442 189 3663</a>
+            </div>
+            <div class="col-2 col-md-2 d-flex justify-content-end align-items-center">
+                <ul class="social-icons">
+                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--END CONTAINER CONTACT-->
+
+    <!--CONTAINER MAIN-->
+    <main class="container" id="container-fluid">
+        <div class="row">
+            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <form action="#" class="form mt-4 mb-4">
+                    <h1 class="text-center">Agenda tu consulta virtual</h1>
+                    <!--PROGRESS BAR-->
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-step progress-step-active" data-title="Tus datos"></div>
+                        <div class="progress-step" data-title="Tu medico"></div>
+                        <div class="progress-step" data-title="Pago"></div>
+                        <div class="progress-step" data-title="Resumen"></div>
+                    </div>
+                    <!--END PROGRESS BAR-->
+                    <!--STEPS-->
+                    <div class="form-step form-step-active">
+                        <div class="input-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="email">Correo electronico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="tel">Numero de telefono</label>
+                            <input type="tel" id="tel" name="tel" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="info">Datos addicionales</label>
+                            <textarea type="text" id="info" name="info"></textarea>
+                        </div>
+                        <div class="btns-group justify-content-end">
+                            <a href="#" class="btn btn-light-blue btn-next w-25">Continuar</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone"/>
+                        </div>
+                        <div class="input-group">
+                            <label for="">Email</label>
+                            <input type="text" name="" id=""/>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-light-blue btn-prev w-25">Regresar</a>
+                            <a href="#" class="btn btn-light-blue btn-next w-25">Continuar</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="date" name="dob" id="dob"/>
+                        </div>
+                        <div class="input-group">
+                            <label for="ID">National ID</label>
+                            <input type="number" name="ID" id="ID"/>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-light-blue btn-prev w-25">Regresar</a>
+                            <a href="#" class="btn btn-light-blue btn-next w-25">Continuar</a>
+                        </div>
+                    </div>
+                    <div class="form-step">
+                        <div class="input-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" name="confirmPassword" id="confirmPassword" required>
+                        </div>
+                        <div class="btns-group">
+                            <a href="#" class="btn btn-light-blue btn-prev w-25">Regresar</a>
+                            <button type="submit" class="btn btn-light-blue w-25">Agendar</button>
+                        </div>
+                    </div>
+                    <!--END STEPS-->
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--END CONTAINER MAIN-->
+
+    <!--FOOTER-->
+    <footer class="container-fluid site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <h6>Ubicación</h6>
+                    <div class="map-responsive">
+                        <iframe
+                            rel="preload"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14929.711412544395!2d-100.42849465!3d20.6928436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d359d148505b49%3A0xcffedc73d636ebb8!2sHospital%20Moscati!5e0!3m2!1ses-419!2smx!4v1653424381032!5m2!1ses-419!2smx"
+                            title="Ubicación Hospital Moscati">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <h6>Acerca de</h6>
+                    <ul class="footer-links">
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Quiénes somos
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Nuestros servicios
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Aviso de privacidad
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Preguntas frecuentes
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Venta de consultorios
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                    <h6>Contáctanos</h6>
+                    <ul class="footer-links">
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Informes: 4421893660
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Urgencias: 442 189 3663
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="mailto:informes@moscati.com.mx">
+                                informes@moscati.com.mx
+                            </a>
+                        </li>
+                        <li class="footer-item footer-expand">
+                            <a class="footer-link footer-expand-link" href="#">
+                                Boulevard, Av. de las Ciencias 2058 Querétaro
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 d-flex text-center justify-content-start align-items-center footer-links justify-content-sm-center justify-content-md-start">
+                    <p class="copyright-text ">Hospital Moscati 2022 &copy; Todos los Derechos Reservados.
+                        <a href="#">TI Moscati</a>
+                    </p>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 d-flex justify-content-end align-items-center justify-content-center justify-content-sm-center justify-content-md-end">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--END FOOTER-->
+
+    <!--BUTTON UP-PAGE-->
+    <span class="up-page material-icons" id="up-page">arrow_upward</span>
+    <!--END BUTTON UP-PAGE-->
+
+    <!--NAVEGATION MENU-->
+    <nav class="nav-drill">
+        <ul class="nav-items nav-level-1">
+            <a href="telemedicina.html" class="nav-link-img nav-expand-link-img">
+                <img src="img/Favicon-48b.png" alt="Logo Moscati" class="logo-nav-bar">
+            </a>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Promociones
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Terapia Intensiva
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Maternidad
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Imagen
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Laboratorio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Cirugías
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    Aseguradoras
+                </a>
+            </li>
+            <li class="nav-item nav-expand">
+                <a class="nav-link nav-expand-link" href="#">
+                    Menu
+                </a>
+                <ul class="nav-items nav-expand-content">
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Acerca de
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Inicio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Nuestros servicios
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Quiénes somos
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Pacientes
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Maternidad
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Directorio médico
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Consultar resultados laboratorio
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Consultar resultados imagen
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item nav-expand">
+                        <a class="nav-link nav-expand-link" href="#">
+                            Información adicional
+                        </a>
+                        <ul class="nav-items nav-expand-content">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Contacto
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Pre registro
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Preguntas frecuentes
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Aviso de privacidad
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    Venta de consultorios
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--END NAVEGATION MENU-->
+
+    <!--IMPORTS SCRIPTS-->
+    <script src="js/menuNavegation.js"></script>
+    <script src="js/stepper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jQuery-v3.6.0.js"></script>
+    <script src="js/upPage.js"></script>
+    <!--END IMPORTS SCRIPTS-->
+</body>
+</html>
