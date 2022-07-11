@@ -242,7 +242,7 @@ textarea::-webkit-scrollbar-track{
     height: .6rem;
 }
 .nav-drill::-webkit-scrollbar-button:increment,
-.contenedor::-webkit-scrollbar-button{
+.nav-drill::-webkit-scrollbar-button{
     display: none;
 }
 .nav-items {
@@ -1475,6 +1475,7 @@ textarea::-webkit-scrollbar-track{
 
 }
 
+/*Infinte Carousel*/
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -1519,11 +1520,13 @@ textarea::-webkit-scrollbar-track{
     width: 100%;
     height: 10rem;
 }
+/*END Infinte Carousel*/
 
-.our-skills {
+/*Services Container*/
+.our-services {
     padding: 2rem 0 0;
 }
-.our-skills .icon {
+.our-services .icon {
     width: 10rem;
     height: 10rem;
     padding: 0;
@@ -1534,12 +1537,12 @@ textarea::-webkit-scrollbar-track{
     justify-content: center;
     align-content: center;
 }
-.our-skills .icon i {
+.our-services .icon i {
     color: var(--bs-dark-blue-8);
-    font-size: 4rem;
+    font-size: 5rem;
     margin: auto;
 }
-.our-skills .box-shadow {
+.our-services .box-shadow {
     background-color: var(--bs-white);
     box-shadow: 0 0 .5rem 0 var(--bs-gray-500);
     padding: 1.5rem;
@@ -1549,20 +1552,20 @@ textarea::-webkit-scrollbar-track{
     min-height: 35rem;
     max-height: 35rem;
 }
-.our-skills .box-shadow:hover {
+.our-services .box-shadow:hover {
     box-shadow: 0 0 1rem 0 var(--bs-gray-800);
 }
-.our-skills h4 {
+.our-services h4 {
     margin: 0;
     text-align: center;
     text-transform: uppercase;
     color: var(--bs-dark-blue-8);
     font-weight: var(--bs-weight-500);
 }
-.our-skills h3 {
+.our-services h3 {
     margin: 0 0 1.5rem 0;
 }
-.our-skills p {
+.our-services p {
     margin: 0;
     line-height: 1.8;
     text-align: center;
@@ -1570,7 +1573,7 @@ textarea::-webkit-scrollbar-track{
     color: var(--bs-gray-text);
     letter-spacing: .0875rem;
 }
-.our-skills a {
+.our-services a {
     margin: 0;
     float: right;
     cursor: pointer;
@@ -1579,8 +1582,66 @@ textarea::-webkit-scrollbar-track{
     color: var(--bs-gray-text);
     font-size: var(--bs-size-16);
 }
-.our-skills a:hover{
+.our-services a:hover{
     font-size: var(--bs-size-18);
+}
+/*END services Container*/
+
+.nav-pills .nav-link {
+    border-radius: 0;
+}
+.nav-pills .services-link.active, .nav-pills .show>.services-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-dark-blue-8);
+}
+.services-link {
+    width: 18rem;
+    border: none;
+    display: block;
+    line-height: 2;
+    text-align: left;
+    letter-spacing: .0875rem;
+    padding: .675rem .875rem;
+    color: var(--bs-dark-blue-8);
+    font-size: var(--bs-size-14);
+    background-color: var(--bs-white);
+    font-weight: var(--bs-weight-500);
+}
+.services-link:hover{
+    background-color: var(--bs-dark-blue-2);
+    color: var(--bs-white);
+}
+.rounded-end-5 {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.service-container {
+    height: 55rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 6rem;
+}
+
+.service-container::-webkit-scrollbar{
+    -webkit-appearance: none;
+}
+.service-container::-webkit-scrollbar-thumb{
+    background-color: var(--bs-gray-500);
+    border-radius: 2rem;
+    border: .2rem solid var(--bs-white);
+}
+.service-container::-webkit-scrollbar-track{
+    border-radius: 1rem;
+}
+.service-container::-webkit-scrollbar:vertical{
+    width: .6rem;
+}
+.service-container::-webkit-scrollbar:horizontal{
+    height: .6rem;
+}
+.service-container::-webkit-scrollbar-button:increment,
+.service-container::-webkit-scrollbar-button{
+    display: none;
 }
 
 @media (min-width: 576px) {
