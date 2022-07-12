@@ -1594,26 +1594,26 @@ textarea::-webkit-scrollbar-track{
 }
 .nav-pills
 .services-link {
-    min-height: 7rem;
-    min-width: 15rem;
-    border: none;
-    display: block;
-    line-height: 2;
-    text-align: left;
+    width: 16rem;
+    height: 7rem;
+    line-height: 1;
+    border-radius: 0;
+    text-align: center;
     letter-spacing: .0875rem;
-    padding: 1.875rem .875rem;
+    padding: .875rem .875rem;
     color: var(--bs-dark-blue-8);
     font-size: var(--bs-size-14);
     background-color: var(--bs-white);
     font-weight: var(--bs-weight-500);
+    border-bottom: .05rem solid var(--bs-dark-blue-8);
 }
 .services-link:hover{
-    background-color: var(--bs-dark-blue-2);
     color: var(--bs-white);
+    background-color: var(--bs-blue-tint-4);
 }
 .services-link.active,
 .nav-pills .show>.services-link {
-    color: var(--bs-nav-pills-link-active-color);
+    color: var(--bs-white);
     background-color: var(--bs-dark-blue-8);
 }
 .rounded-end-5 {
@@ -1621,10 +1621,10 @@ textarea::-webkit-scrollbar-track{
     border-bottom-right-radius: 2rem;
 }
 .service-container {
-    height: 55rem;
+    height: 75vh;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 3rem 3rem 6rem 3rem;
+    padding: 2rem 3rem 5rem 5rem;
 }
 .service-container::-webkit-scrollbar{
     -webkit-appearance: none;
