@@ -159,6 +159,23 @@ textarea::-webkit-scrollbar-track{
 }
 /* END Global Style */
 
+/*Animations*/
+.animation-top {
+    position: relative;
+    animation: animation-top 2s ease;
+}
+@keyframes animation-top {
+    0% {
+        opacity: 0;
+        transform: translateY(15rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*END Animations*/
+
 /*Menu navigation multiple nivel*/
 .banner-img {
     margin: auto;
@@ -1195,21 +1212,6 @@ textarea::-webkit-scrollbar-track{
 }
 /* END Button Group */
 
-.animation-top {
-    position: relative;
-    animation: animation-top 2s ease;
-}
-@keyframes animation-top {
-    0% {
-        opacity: 0;
-        transform: translateY(15rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 /* Progressbar */
 .progressbar {
     position: relative;
@@ -1329,7 +1331,6 @@ textarea::-webkit-scrollbar-track{
     font-size: var(--bs-size-26);
     font-weight: var(--bs-weight-600);
 }
-
 @media (min-width: 576px) {
     .metric-icons {
         font-size: var(--bs-size-28);
@@ -1587,21 +1588,20 @@ textarea::-webkit-scrollbar-track{
 }
 /*END services Container*/
 
-.nav-pills .nav-link {
+.nav-pills
+.nav-link {
     border-radius: 0;
 }
-.nav-pills .services-link.active, .nav-pills .show>.services-link {
-    color: var(--bs-nav-pills-link-active-color);
-    background-color: var(--bs-dark-blue-8);
-}
+.nav-pills
 .services-link {
-    width: 18rem;
+    min-height: 7rem;
+    min-width: 15rem;
     border: none;
     display: block;
     line-height: 2;
     text-align: left;
     letter-spacing: .0875rem;
-    padding: .675rem .875rem;
+    padding: 1.875rem .875rem;
     color: var(--bs-dark-blue-8);
     font-size: var(--bs-size-14);
     background-color: var(--bs-white);
@@ -1611,6 +1611,11 @@ textarea::-webkit-scrollbar-track{
     background-color: var(--bs-dark-blue-2);
     color: var(--bs-white);
 }
+.services-link.active,
+.nav-pills .show>.services-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: var(--bs-dark-blue-8);
+}
 .rounded-end-5 {
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
@@ -1619,9 +1624,8 @@ textarea::-webkit-scrollbar-track{
     height: 55rem;
     overflow-x: hidden;
     overflow-y: scroll;
-    padding: 6rem;
+    padding: 3rem 3rem 6rem 3rem;
 }
-
 .service-container::-webkit-scrollbar{
     -webkit-appearance: none;
 }
@@ -1642,6 +1646,9 @@ textarea::-webkit-scrollbar-track{
 .service-container::-webkit-scrollbar-button:increment,
 .service-container::-webkit-scrollbar-button{
     display: none;
+}
+.service-icon i{
+    font-size: 3rem;
 }
 
 @media (min-width: 576px) {

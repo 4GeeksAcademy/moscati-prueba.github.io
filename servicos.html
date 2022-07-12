@@ -54,39 +54,42 @@
     <main class="container-fluid" id="container-fluid">
         <div class="row">
             <div class="col-12 p-0">
-                <h3 class="carousel-title-promo text-center my-4">Nuestros servicios</h3>
+                <h3 class="carousel-title-promo text-center mt-4 mb-1">Nuestros servicios</h3>
             </div>
             <div class="col-12 p-0 d-flex align-items-start my-3">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-
-                    <button class="services-link active rounded-end-5" id="v-pills-hospitalization-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hospitalization"
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div class="services-link active d-flex flex-column justify-content-center align-items-center" id="v-pills-hospitalization-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hospitalization"
                             type="button" role="tab" aria-controls="v-pills-hospitalization" aria-selected="true">
+                        <div class="service-icon">
                             <i class="fa-solid fa-bed-pulse"></i>
-                        Hospitalización
-                    </button>
+                        </div>
+                        <div>
+                            Hospitalización
+                        </div>
+                    </div>
 
-                    <button class="services-link rounded-end-5" id="v-pills-therapy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-therapy"
+                    <button class="services-link" id="v-pills-therapy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-therapy"
                             type="button" role="tab" aria-controls="v-pills-therapy" aria-selected="false">Terapia intensiva</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-humanized-tab" data-bs-toggle="pill" data-bs-target="#v-pills-humanized"
-                            type="button" role="tab" aria-controls="v-pills-humanized" aria-selected="false">Terapia humanizada</button>
-
-                    <button class="services-link rounded-end-5" id="v-pills-image-tab" data-bs-toggle="pill" data-bs-target="#v-pills-image"
+                    <button class="services-link" id="v-pills-image-tab" data-bs-toggle="pill" data-bs-target="#v-pills-image"
                             type="button" role="tab" aria-controls="v-pills-image" aria-selected="false">Imagen</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-pharmacy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pharmacy"
+                    <button class="services-link" id="v-pills-pharmacy-tab" data-bs-toggle="pill" data-bs-target="#v-pills-pharmacy"
                             type="button" role="tab" aria-controls="v-pills-pharmacy" aria-selected="false">Farmacia</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-optics-tab" data-bs-toggle="pill" data-bs-target="#v-pills-optics"
+                    <button class="services-link" id="v-pills-laboratory-tab" data-bs-toggle="pill" data-bs-target="#v-pills-laboratory"
+                            type="button" role="tab" aria-controls="v-pills-laboratory" aria-selected="false">Laboratorio</button>
+
+                    <button class="services-link" id="v-pills-optics-tab" data-bs-toggle="pill" data-bs-target="#v-pills-optics"
                             type="button" role="tab" aria-controls="v-pills-optics" aria-selected="false">Optica</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-hemodynamic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hemodynamic"
+                    <button class="services-link" id="v-pills-hemodynamic-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hemodynamic"
                             type="button" role="tab" aria-controls="v-pills-hemodynamic" aria-selected="false">Hemodinamia</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-emergency-tab" data-bs-toggle="pill" data-bs-target="#v-pills-emergency"
+                    <button class="services-link" id="v-pills-emergency-tab" data-bs-toggle="pill" data-bs-target="#v-pills-emergency"
                             type="button" role="tab" aria-controls="v-pills-emergency" aria-selected="false">Urgencias</button>
 
-                    <button class="services-link rounded-end-5" id="v-pills-cafeteria-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cafeteria"
+                    <button class="services-link" id="v-pills-cafeteria-tab" data-bs-toggle="pill" data-bs-target="#v-pills-cafeteria"
                             type="button" role="tab" aria-controls="v-pills-cafeteria" aria-selected="false">Cafeteria</button>
                 </div>
                 <div class="tab-content" id="v-pills-tabContent">
@@ -105,20 +108,18 @@
                             individuales para la atención crítica de pacientes adultos, pediátricos y neonatales. Asimismo,
                             contamos con un equipo médico multidisciplinario y capaz de atender los casos más críticos con
                             los más altos estándares de calidad para salvaguardar la salud del paciente.
-                            <ul>
-                                <li>Pacientes adultos</li>
-                                <li>Pacientes pediátricos</li>
-                                <li>Pacientes neonatales</li>
-                            </ul>
-                            Los horarios de visita para familiares son:
-                            <ul>
-                                <li>Matutino 11:00 – 12:00 hrs</li>
-                                <li>Vespertino 16:00 – 17:00 hrs</li>
-                                <li>Nocturno 22:00 – 23:00 hrs</li>
-                            </ul>
                         </p>
-                    </div>
-                    <div class="tab-pane fade service-container" id="v-pills-humanized" role="tabpanel" aria-labelledby="v-pills-humanized-tab">
+                        <ul>
+                            <li>Pacientes adultos</li>
+                            <li>Pacientes pediátricos</li>
+                            <li>Pacientes neonatales</li>
+                        </ul>
+                        Los horarios de visita para familiares son:
+                        <ul>
+                            <li>Matutino 11:00 – 12:00 hrs</li>
+                            <li>Vespertino 16:00 – 17:00 hrs</li>
+                            <li>Nocturno 22:00 – 23:00 hrs</li>
+                        </ul>
                         <p>
                             En el Hospital Moscati buscamos humanizar los Cuidados Intensivos centrándonos en la persona
                             a la que atendemos, con su entorno familiar, en su condición de ser humano y en incluir a los
@@ -134,23 +135,27 @@
                             clínicos de los pacientes ingresados a las unidades de cuidados intensivos.
                         </p>
                     </div>
+
                     <div class="tab-pane fade service-container" id="v-pills-image" role="tabpanel" aria-labelledby="v-pills-image-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
-                            <ul>
-                                <li>Resonancia Magnética de 1.5 Teslas</li>
-                                <li>Tomografía computada de 64 cortes</li>
-                                <li>Ultrasonido de 2D y 3D/4D</li>
-                                <li>Rayos X fijo y portátil</li>
-                                <li>Fluoroscopia</li>
-                                <li>Mastografía digital</li>
-                            </ul>
+                        </p>
+                        <ul>
+                            <li>Resonancia Magnética de 1.5 Teslas</li>
+                            <li>Tomografía computada de 64 cortes</li>
+                            <li>Ultrasonido de 2D y 3D/4D</li>
+                            <li>Rayos X fijo y portátil</li>
+                            <li>Fluoroscopia</li>
+                            <li>Mastografía digital</li>
+                        </ul>
+                        <p>
                             Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
                         </p>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-pharmacy" role="tabpanel" aria-labelledby="v-pills-pharmacy-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        </p>
                         <ul>
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
@@ -159,12 +164,26 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
+                        <p>
+                            Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
                         </p>
+                    </div>
+                    <div class="tab-pane fade service-container" id="v-pills-laboratory" role="tabpanel" aria-labelledby="v-pills-laboratory-tab">
+                        <p>
+                            El laboratorio de análisis clínicos del Hospital Moscati cuenta con equipo de última generación el cual garantiza la validez y seguridad de los estudios solicitados el servicio está disponible las 24 horas del día los 365 días del año. Cuenta con áreas de especialidad como son:
+                        </p>
+                        <ul>
+                            <li>Microbiología</li>
+                            <li>Inmunología</li>
+                            <li>Química seca</li>
+                            <li>Servicio de transfusión sanguínea</li>
+                            <li>Uroanálisis</li>
+                        </ul>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-optics" role="tabpanel" aria-labelledby="v-pills-optics-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        </p>
                         <ul>
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
@@ -173,12 +192,14 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
+                        <p>
+                            Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
                         </p>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-hemodynamic" role="tabpanel" aria-labelledby="v-pills-hemodynamic-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        </p>
                         <ul>
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
@@ -187,12 +208,11 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
-                        </p>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-emergency" role="tabpanel" aria-labelledby="v-pills-emergency-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        </p>
                         <ul>
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
@@ -201,12 +221,11 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
-                        </p>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-cafeteria" role="tabpanel" aria-labelledby="v-pills-cafeteria-tab">
                         <p>
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        </p>
                         <ul>
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
@@ -215,8 +234,6 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
-                        </p>
                     </div>
                 </div>
             </div>

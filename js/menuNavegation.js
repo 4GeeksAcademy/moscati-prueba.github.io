@@ -1,6 +1,6 @@
 const navExpand = [].slice.call(document.querySelectorAll('.nav-expand'));
 const backLink =
-    `<a href="../telemedicina.html" class="nav-link-img nav-expand-link-img">
+    `<a href="../index.html" class="nav-link-img nav-expand-link-img">
       <img src="../img/Favicon-16b.png" alt="Logo Moscati" class="logo-nav-bar">
     </a>
     <li class="nav-item">
