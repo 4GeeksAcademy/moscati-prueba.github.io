@@ -1597,7 +1597,7 @@ textarea::-webkit-scrollbar-track{
     width: 16rem;
     height: 7rem;
     line-height: 1;
-    border-radius: 0;
+    border-radius: 0!important;
     text-align: center;
     letter-spacing: .0875rem;
     padding: .875rem .875rem;
@@ -1616,9 +1616,8 @@ textarea::-webkit-scrollbar-track{
     color: var(--bs-white);
     background-color: var(--bs-dark-blue-8);
 }
-.rounded-end-5 {
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+.service-icon i{
+    font-size: 3rem;
 }
 .service-container {
     height: 75vh;
@@ -1646,9 +1645,6 @@ textarea::-webkit-scrollbar-track{
 .service-container::-webkit-scrollbar-button:increment,
 .service-container::-webkit-scrollbar-button{
     display: none;
-}
-.service-icon i{
-    font-size: 3rem;
 }
 
 @media (min-width: 576px) {
