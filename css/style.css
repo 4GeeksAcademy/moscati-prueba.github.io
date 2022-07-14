@@ -1756,18 +1756,17 @@ textarea::-webkit-scrollbar-track{
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     padding: .875rem 1rem;
 }
 .grid-container > div {
-    background: black;
     padding: 0;
-    border-radius: .575rem;
+    background: transparent;
 }
 .grid-container > div::before {
     content: "";
-    padding-bottom: 100%;
     display: block;
+    padding-bottom: 100%;
 }
 .grid-container > div {
     display: grid;
@@ -1779,7 +1778,7 @@ textarea::-webkit-scrollbar-track{
 .grid-container > div > img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 @media (min-width: 576px) {
     .grid-container {
