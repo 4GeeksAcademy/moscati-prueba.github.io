@@ -48,11 +48,8 @@
     <!--CONTAINER MAIN-->
     <main class="container-fluid" id="container-fluid">
         <div class="row">
-<!--            <div class="col-12">-->
-<!--                <h3 class="carousel-title-promo text-center mt-2">Nuestros Servicios</h3>-->
-<!--            </div>-->
             <div class="col-12 p-0 d-flex align-items-start mb-2 mt-5">
-                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <div class="flex-column" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 
                     <div class="services-link active d-flex flex-column justify-content-md-between align-items-center justify-content-center"
                          id="v-pills-hospitalization-tab" data-bs-toggle="pill" data-bs-target="#v-pills-hospitalization"
@@ -174,14 +171,12 @@
 
                 <div class="tab-content" id="v-pills-tabContent">
                     <div class="tab-pane fade show active service-container" id="v-pills-hospitalization" role="tabpanel" aria-labelledby="v-pills-hospitalization-tab">
-                        <h3 class="carousel-title-promo service-title" style="">Hospitalización</h3>
-
+                        <h3 class="service-title" style="">Hospitalización</h3>
                         <p class="service-text">
                             En el Hospital Moscati buscamos dar un trato cálido y amable a todos nuestros pacientes, para
                             ofrecerte el mejor servicio. Conoce nuestras diferentes opciones: habitaciones estándar, suites y
                             master suites.
                         </p>
-
                         <div class="grid-container">
                             <div>
                                 <img src="img/preregistro.jpg" alt="" class="rounded">
@@ -199,25 +194,43 @@
                     </div>
 
                     <div class="tab-pane fade service-container" id="v-pills-therapy" role="tabpanel" aria-labelledby="v-pills-therapy-tab">
-                        <p>
+                        <h3 class="service-title" style="">Terapia intensiva</h3>
+                        <p class="service-text">
                             El área de terapia intensiva ubicada en el piso 2 del Hospital Moscati es de alta especialidad
                             médica con equipos de última generación, únicos en el país. Está conformada por 35 cubículos
                             individuales para la atención crítica de pacientes adultos, pediátricos y neonatales. Asimismo,
                             contamos con un equipo médico multidisciplinario y capaz de atender los casos más críticos con
                             los más altos estándares de calidad para salvaguardar la salud del paciente.
                         </p>
-                        <ul>
+                        <ul class="service-list">
                             <li>Pacientes adultos</li>
                             <li>Pacientes pediátricos</li>
                             <li>Pacientes neonatales</li>
                         </ul>
-                        Los horarios de visita para familiares son:
-                        <ul>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
+                        <p class="service-text">
+                            Los horarios de visita para familiares son:
+                        </p>
+                        <ul class="service-list">
                             <li>Matutino 11:00 – 12:00 hrs</li>
                             <li>Vespertino 16:00 – 17:00 hrs</li>
                             <li>Nocturno 22:00 – 23:00 hrs</li>
                         </ul>
-                        <p>
+                        <h3 class="service-title" style="">Terapia humanizada</h3>
+                        <p class="service-text">
                             En el Hospital Moscati buscamos humanizar los Cuidados Intensivos centrándonos en la persona
                             a la que atendemos, con su entorno familiar, en su condición de ser humano y en incluir a los
                             familiares haciéndolos parte del proceso. Contamos con los principios fundamentales de una
@@ -231,13 +244,28 @@
                             Estos principios integrados a la unidad de cuidados intensivos han demostrado mejorar los resultados
                             clínicos de los pacientes ingresados a las unidades de cuidados intensivos.
                         </p>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
 
                     <div class="tab-pane fade service-container" id="v-pills-image" role="tabpanel" aria-labelledby="v-pills-image-tab">
-                        <p>
+                        <h3 class="service-title" style="">Imagen</h3>
+                        <p class="service-text">
                             En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
                         </p>
-                        <ul>
+                        <ul class="service-list">
                             <li>Resonancia Magnética de 1.5 Teslas</li>
                             <li>Tomografía computada de 64 cortes</li>
                             <li>Ultrasonido de 2D y 3D/4D</li>
@@ -245,92 +273,189 @@
                             <li>Fluoroscopia</li>
                             <li>Mastografía digital</li>
                         </ul>
-                        <p>
+                        <p class="service-text">
                             Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
                         </p>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-pharmacy" role="tabpanel" aria-labelledby="v-pills-pharmacy-tab">
-                        <p>
-                            En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        <h3 class="service-title" style="">Farmacia</h3>
+                        <p class="service-text">
+                            Te ofrece una amplia variedad de medicamentos de referencia, alta especialidad y genéricos de
+                            laboratorios reconocidos.
+                            Somos una farmacia especializada en tratamientos de:
                         </p>
-                        <ul>
-                            <li>Resonancia Magnética de 1.5 Teslas</li>
-                            <li>Tomografía computada de 64 cortes</li>
-                            <li>Ultrasonido de 2D y 3D/4D</li>
-                            <li>Rayos X fijo y portátil</li>
-                            <li>Fluoroscopia</li>
-                            <li>Mastografía digital</li>
+                        <ul class="service-list">
+                            <li>Patologías de tercer nivel.</li>
+                            <li>Enfermedades crónicas-degenerativas.</li>
+                            <li>Medicina critica.</li>
+                            <li>Infectología.</li>
+                            <li>Material de curación, traumatología y ortopedia.</li>
+                            <li>Productos de Higiene y belleza.</li>
                         </ul>
-                        <p>
-                            Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
+                        <p class="service-text">
+                            Ofrecemos un servicio de dispensación y asesoría farmacéutica por personal certificado.
+                            Farmacia Moscati pone al servicio de los profesionales de la salud un Sistema de Información
+                            de Medicamentos. Si tienes cualquier duda contacta con nosotros a través de e-mail
+                            farmaciaebor@moscati.com.mx
                         </p>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-laboratory" role="tabpanel" aria-labelledby="v-pills-laboratory-tab">
-                        <p>
-                            El laboratorio de análisis clínicos del Hospital Moscati cuenta con equipo de última generación el cual garantiza la validez y seguridad de los estudios solicitados el servicio está disponible las 24 horas del día los 365 días del año. Cuenta con áreas de especialidad como son:
+                        <h3 class="service-title" style="">Laboratorio</h3>
+                        <p class="service-text">
+                            El laboratorio de análisis clínicos del Hospital Moscati cuenta con equipo de última generación
+                            el cual garantiza la validez y seguridad de los estudios solicitados el servicio está disponible
+                            las 24 horas del día los 365 días del año. Cuenta con áreas de especialidad como son:
                         </p>
-                        <ul>
+                        <ul class="service-list">
                             <li>Microbiología</li>
                             <li>Inmunología</li>
                             <li>Química seca</li>
                             <li>Servicio de transfusión sanguínea</li>
                             <li>Uroanálisis</li>
                         </ul>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-optics" role="tabpanel" aria-labelledby="v-pills-optics-tab">
-                        <p>
-                            En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        <h3 class="service-title" style="">Óptica</h3>
+                        <p class="service-text">
+                            En la Óptica del Hospital Moscati ubicada en la planta baja podrás encontrar las mejores para
+                            el cuidado de tu salud visual. Contamos con un amplio catálogo de armazones creados con la más
+                            alta tecnología para satisfacer las necesidades de nuestros clientes y con la garantía de apego
+                            al tratamiento médico indicado. <br>
+                            Servicios:
                         </p>
-                        <ul>
-                            <li>Resonancia Magnética de 1.5 Teslas</li>
-                            <li>Tomografía computada de 64 cortes</li>
-                            <li>Ultrasonido de 2D y 3D/4D</li>
-                            <li>Rayos X fijo y portátil</li>
-                            <li>Fluoroscopia</li>
-                            <li>Mastografía digital</li>
+                        <ul class="service-list">
+                            <li>Adaptación de lentes de contacto</li>
+                            <li>Revisión de la vista por optometrista</li>
+                            <li>Consulta oftalmológica por médico oftalmólogo</li>
+                            <li>Venta de lentes oftálmicos</li>
                         </ul>
-                        <p>
-                            Nuestros estudios son entregados con interpretación de un médico radiólogo certificado.
-                        </p>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-hemodynamic" role="tabpanel" aria-labelledby="v-pills-hemodynamic-tab">
-                        <p>
-                            En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        <h3 class="service-title" style="">Hemodinamia</h3>
+                        <p class="service-text">
+                            En el Hospital Moscati contamos con una sala de hemodinamia de última generación cuya tecnología
+                            de vanguardia y su personal especializado, permite realizar procedimientos diagnósticos y terapéuticos.
+                            Estos procedimientos se logran a base de la implementación de tecnología de imagen y materiales
+                            especializados logrando el diagnóstico y atención de pacientes con patología vascular periférica y
+                            cerebro vascular.
                         </p>
-                        <ul>
-                            <li>Resonancia Magnética de 1.5 Teslas</li>
-                            <li>Tomografía computada de 64 cortes</li>
-                            <li>Ultrasonido de 2D y 3D/4D</li>
-                            <li>Rayos X fijo y portátil</li>
-                            <li>Fluoroscopia</li>
-                            <li>Mastografía digital</li>
-                        </ul>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-emergency" role="tabpanel" aria-labelledby="v-pills-emergency-tab">
-                        <p>
-                            En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        <h3 class="service-title" style="">Urgencias</h3>
+                        <p class="service-text">
+                            El departamento de urgencias cuenta con personal especializado las 24 horas del día los 365 días del año.
                         </p>
-                        <ul>
-                            <li>Resonancia Magnética de 1.5 Teslas</li>
-                            <li>Tomografía computada de 64 cortes</li>
-                            <li>Ultrasonido de 2D y 3D/4D</li>
-                            <li>Rayos X fijo y portátil</li>
-                            <li>Fluoroscopia</li>
-                            <li>Mastografía digital</li>
-                        </ul>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane fade service-container" id="v-pills-cafeteria" role="tabpanel" aria-labelledby="v-pills-cafeteria-tab">
-                        <p>
-                            En el departamento de imagen del Hospital Moscati contamos con equipos de última generación de la marca General Electric, con el fin de obtener imágenes de alta resolución y realizar el diagnóstico correcto.
+                        <h3 class="service-title" style="">Cafeteria</h3>
+                        <p class="service-text">
+                            Cafetería Benevento ubicada en planta baja a un costado de la óptica.
                         </p>
-                        <ul>
-                            <li>Resonancia Magnética de 1.5 Teslas</li>
-                            <li>Tomografía computada de 64 cortes</li>
-                            <li>Ultrasonido de 2D y 3D/4D</li>
-                            <li>Rayos X fijo y portátil</li>
-                            <li>Fluoroscopia</li>
-                            <li>Mastografía digital</li>
+                        <p class="service-text">
+                            Nuestros horarios:
+                        </p>
+                        <ul class="service-list">
+                            <li>Lunes a viernes 8:30 am - 19:00 pm.</li>
+                            <li>Sábado y Domingo 8:30 am - 15:00 pm.</li>
                         </ul>
+                        <div class="grid-container">
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                            <div>
+                                <img src="img/preregistro.jpg" alt="" class="rounded">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
