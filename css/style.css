@@ -1485,7 +1485,7 @@ textarea::-webkit-scrollbar-track{
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-20rem*15));
+        transform: translateX(calc(-15.1rem*30));
     }
 }
 .slider {
@@ -1517,8 +1517,8 @@ textarea::-webkit-scrollbar-track{
 }
 .slider .slide-track {
     display: flex;
-    width: calc(35rem*15);
-    animation: scroll 60s infinite alternate ease;
+    width: calc(25rem*25);
+    animation: scroll 35s infinite alternate ease-in-out;
 }
 .slider .slide img{
     width: 100%;
