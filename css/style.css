@@ -1068,9 +1068,6 @@ textarea::-webkit-scrollbar-track{
         line-height: 1.5;
         letter-spacing: .2rem
     }
-    .carousel-background {
-        background-color: var(--bs-light-gray);
-    }
     .carousel-padding {
         padding: 3rem 1.5rem 4rem 7rem;
     }
@@ -1095,9 +1092,6 @@ textarea::-webkit-scrollbar-track{
         font-size: var(--bs-size-18);
         line-height: 2;
         letter-spacing: .2rem
-    }
-    .carousel-background {
-        background-color: var(--bs-light-gray);
     }
     .carousel-padding {
         padding: 3rem 1rem 4rem 8rem;
@@ -1810,3 +1804,123 @@ textarea::-webkit-scrollbar-track{
     }
 }
 /*END Grid Container*/
+
+
+/*Maternity Container*/
+.maternity-text {
+    margin: 0;
+    line-height: 2;
+    text-align: justify;
+    letter-spacing: .0875rem;
+    color: var(--bs-dark-blue-8);
+    font-size: var(--bs-size-14);
+    font-weight: var(--bs-weight-500);
+}
+.maternity-list {
+    margin: 0;
+    padding: 0 3rem;
+    line-height: 2;
+    text-align: justify;
+    letter-spacing: .0875rem;
+    color: var(--bs-dark-blue-8);
+    font-size: var(--bs-size-14);
+    font-weight: var(--bs-weight-500);
+    list-style: circle;
+}
+@media (min-width: 576px) {
+    .service-title {
+        font-size: var(--bs-size-30);
+    }
+    .maternity-text {
+        font-size: var(--bs-size-16);
+    }
+    .maternity-list {
+        font-size: var(--bs-size-16);
+    }
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 992px) {
+    .maternity-text {
+        letter-spacing: .1875rem;
+    }
+}
+@media (min-width: 1200px) {
+
+}
+@media (min-width: 1400px) {
+
+}
+/*END Maternity Container*/
+
+
+/* Create three columns of equal width */
+.columnas {
+    float: left;
+    width: 25%;
+    padding: 2rem 0;
+}
+
+/* Style the list */
+.price {
+    list-style-type: none;
+
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+    background-color: #111;
+    color: white;
+    font-size: 25px;
+}
+
+/* List items */
+.price li {
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+    background-color: #eee;
+    font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+    .columnas {
+        width: 100%;
+    }
+}
+
+.maternity-background {
+    background: url("../../../img/maternidad-52.jpeg") no-repeat left;
+    background-size: contain;
+    height: 65rem;
+}
+.maternity-color {
+    background-color: #f4f3f1;
+}
